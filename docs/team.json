@@ -1,26 +1,26 @@
 {
-    "teamName": "{naam van je team}",
+    "teamName": "The Number Ones",
     "members": [
         {
-            "name" : "{teamlid 1}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-1"
+            "name" : "brianne",
+            "personalPage" : "https://briannededeugd.github.io/web-app-from-scratch-2324/",
+            "personalData": "https://raw.githubusercontent.com/briannededeugd/web-app-from-scratch-2324/main/docs/data/data.json"
         },
         {
-            "name" : "{teamlid 2}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-2"
+            "name" : "elaine",
+            "personalPage" : "https://briannededeugd.github.io/web-app-from-scratch-2324/",
+            "personalData": "https://raw.githubusercontent.com/briannededeugd/web-app-from-scratch-2324/main/docs/data/data.json"
         },
         {
-            "name" : "{teamlid 3}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-3"
+            "name" : "rose",
+            "personalPage" : "https://briannededeugd.github.io/web-app-from-scratch-2324/",
+            "personalData": "https://raw.githubusercontent.com/briannededeugd/web-app-from-scratch-2324/main/docs/data/data.json"
         },
         {
-            "name" : "{teamlid 4}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-4"
-        },
-        {
-            "name" : "{teamlid 5}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-5"
-        },
+            "name" : "ruud",
+            "personalPage" : "https://briannededeugd.github.io/web-app-from-scratch-2324/",
+            "personalData": "https://raw.githubusercontent.com/briannededeugd/web-app-from-scratch-2324/main/docs/data/data.json"
+        }
     ],
 
 
