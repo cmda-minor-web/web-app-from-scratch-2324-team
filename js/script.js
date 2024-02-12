@@ -1,11 +1,18 @@
-// Use to load in the right data (members[0].personalData etc.)
+/**============================================
+ *               VARIABLES
+ *=============================================**/
 let members = [];
 
-// Use to load in the data objects from Github
-let brianne = {};
-let elaine = {};
-let rose = {};
-let ruud = {};
+const memberData = {
+	brianne: {},
+	elaine: {},
+	rose: {},
+	ruud: {},
+};
+
+/**============================================
+ *       LOADING AND LOGGING THE RIGHT DATA
+ *=============================================**/
 
 // Fetching the members
 fetch("./team.json")
@@ -16,14 +23,7 @@ fetch("./team.json")
 		console.log("TEAM MEMBERS:", members);
 	});
 
-const memberData = {
-	brianne: {},
-	elaine: {},
-	rose: {},
-	ruud: {},
-};
-
-// Loading and logging the members
+// Matching data to members
 function loadMemberData(members) {
 	members.forEach((member) => {
 		const dataURL = `${member.personalData}`;
@@ -39,13 +39,16 @@ function loadMemberData(members) {
 				// Directly assign the fetched data to the correct variable based on the member's name
 				Object.assign(memberData[member.name], data);
 				console.log(`${member.name}`, data); // Logs the data per member
-				showMemberData(member);
+				showMemberData();
 			})
 			.catch((error) => console.error("Error when loading the data:", error));
 	});
 }
 
-function showMemberData(member) {
+/**============================================
+ *               EXAMPLE: FUNCTION
+ *=============================================**/
+function showMemberData() {
 	console.log("Showing member data now!");
 	const memberOne = document.querySelector("#member-one");
 	const memberTwo = document.querySelector("#member-two");
