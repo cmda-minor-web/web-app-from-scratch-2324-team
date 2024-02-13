@@ -4,10 +4,10 @@
 let members = [];
 
 const memberData = {
-  brianne: {},
-  elaine: {},
-  rose: {},
-  ruud: {},
+	brianne: {},
+	elaine: {},
+	rose: {},
+	ruud: {},
 };
 
 /**============================================
@@ -16,50 +16,41 @@ const memberData = {
 
 // Fetching the members
 fetch("./team.json")
-  .then((response) => response.json())
-  .then((teamdata) => {
-    members = teamdata.members;
-    loadMemberData(members);
-    console.log("TEAM MEMBERS:", members);
-  });
+	.then((response) => response.json())
+	.then((teamdata) => {
+		members = teamdata.members;
+		loadMemberData(members);
+		console.log("TEAM MEMBERS:", members);
+	});
 
 // Matching data to members
 function loadMemberData(members) {
-  members.forEach((member) => {
-    const dataURL = `${member.personalPage}`;
+	members.forEach((member) => {
+		const dataURL = `${member.personalPage}`;
 
-    fetch(dataURL)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Directly assign the fetched data to the correct variable based on the member's name
-        Object.assign(memberData[member.name], data);
-        console.log(`${member.name}`, data); // Logs the data per member
-        showMemberData();
-      })
-      .catch((error) => console.error("Error when loading the data:", error));
-  });
-}
+		fetch(dataURL)
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error("Network response was not ok");
+				}
+				return response.json();
+			})
+			.then((data) => {
+				// Directly assign the fetched data to the correct variable based on the member's name
+				Object.assign(memberData[member.name], data);
+				console.log(`${member.name}`, data); // Logs the data per member
 
-/**============================================
- *               EXAMPLE: FUNCTION
- *=============================================**/
-function showMemberData() {
-  console.log("Showing member data now!");
-  const memberOne = document.querySelector("#member-one");
-  const memberTwo = document.querySelector("#member-two");
-  const memberThree = document.querySelector("#member-three");
-  const memberFour = document.querySelector("#member-four");
+				// Set background image here after data is loaded
+				const buttons = [brianneButton, roseButton, elaineButton, ruudButton];
 
-  // Changing the html based on the data. ALWAYS USE memberData.yourname.thepropertyneeded
-  memberOne.textContent = memberData.brianne.name;
-  memberTwo.textContent = memberData.elaine.name;
-  memberThree.textContent = memberData.rose.name;
-  memberFour.textContent = memberData.ruud.name;
+				buttons.forEach((button) => {
+					button.style.backgroundImage = `url("${
+						memberData[button.id].avatar_url
+					}")`;
+				});
+			})
+			.catch((error) => console.error("Error when loading the data:", error));
+	});
 }
 
 /**============================================
@@ -73,4 +64,42 @@ const levelEl = document.getElementById("level");
 const iconEl = document.getElementById("icon");
 const favGameEl = document.getElementById("favorite-game");
 const bioEl = document.getElementById("bio");
+
+// Each button
+const brianneButton = document.getElementById("brianne");
+const elaineButton = document.getElementById("elaine");
+const roseButton = document.getElementById("rose");
+const ruudButton = document.getElementById("ruud");
+
 const buttonEls = document.getElementsByTagName("button"); // @ Brianne from Rose: Should return a HTML Collection, which I think may be most convenient to work with and loop over in this scenario..?
+
+/**============================================
+ *        CHANGING DATA ON BUTTON CLICK
+ *=============================================**/
+// Changing the html based on the data. ALWAYS USE memberData.yourname.thepropertyneeded
+
+function updateMemberData(member) {
+	nameEl.textContent = member.name;
+	usernameEl.textContent = member.username;
+	levelEl.textContent = member.level;
+	bioEl.textContent = member.bio;
+	iconEl.src = member.avatar_url;
+	favGameEl.textContent = member.favorite_game.join(", ");
+	console.log("button clicked!");
+}
+
+brianneButton.addEventListener("click", () => {
+	updateMemberData(memberData.brianne);
+});
+
+elaineButton.addEventListener("click", () => {
+	updateMemberData(memberData.elaine);
+});
+
+roseButton.addEventListener("click", () => {
+	updateMemberData(memberData.rose);
+});
+
+ruudButton.addEventListener("click", () => {
+	updateMemberData(memberData.ruud);
+});
