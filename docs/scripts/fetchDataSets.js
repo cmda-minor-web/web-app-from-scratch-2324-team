@@ -46,7 +46,6 @@ const getCountryWikiExtractHTML = async (country) => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-
             return response.json();
         });
 
@@ -65,7 +64,8 @@ const getCountryWikiExtractHTML = async (country) => {
             //The api is made to get multiple article, so eventhough we are only getting one we need to search for the id and get it out of an array.
             let pages = response.query.pages;
             pageId = Object.keys(pages)[0];
-            return pages[pageId].extract;
+            console.log(pages[pageId])
+            return pages[pageId];
         });
 
     return await wikiDescrition;
@@ -77,12 +77,12 @@ const getCountryWikiExtractHTML = async (country) => {
 
 // Get data about country from Rest Countries API: https://restcountries.com/
 const fetchRestcountriesApi = async (country) => {
-    let result = await fetch(`https://restcountries.com/v3.1/name/${country}?fullText=true`)
+    console.log(country.replace("-", " "))
+    let result = await fetch(`https://restcountries.com/v3.1/name/${country.replace("-", " ")}?fullText=true`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-
             return response.json();
         })
 
@@ -96,6 +96,7 @@ const getCountryData = async (country) => {
         .then(([extractHTML, restcountriesData]) => {
             return {
                 // Restructure the data to a usable object
+                id: country.toLowerCase().replace(" ", "-"),
                 country: restcountriesData[0].name.common,
                 description: extractHTML,
                 flagImageUrl: restcountriesData[0].flags.svg,

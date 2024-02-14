@@ -2,7 +2,7 @@
     --white-color: #FFFFFF;
     --gray-color: #A9A9A9;
     --dark-gray-color: #626262;
-    --black-color: #000000;
+    --black-color: #1A1A1A;
     --standard-path-color: #ECECEC;
 
     --eefje-visited-color: #BE54D9;
@@ -31,7 +31,9 @@ h5,
 h6,
 p,
 a,
-button {
+button,
+li,
+span {
     font-family: 'Figtree', sans-serif;
     font-weight: 600;
     -webkit-font-smoothing: antialiased;

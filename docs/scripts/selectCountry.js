@@ -96,8 +96,18 @@ const openSideMenuWithData = (data) => {
     popup.appendChild(flag);
 
     const description = document.createElement("p");
-    description.innerHTML = data.description;
+    description.innerHTML = data.description.extract;
     popup.appendChild(description);
+
+    const wikiLink = document.createElement("a");
+    wikiLink.href = "https://en.wikipedia.org/wiki/" + data.description.title;
+    wikiLink.innerText = "Read more on Wikipedia";
+    wikiLink.target = "_blank"
+    popup.appendChild(wikiLink);
+
+    const countryImg = document.createElement("img");
+    countryImg.src = "./images/" + data.id + ".jpg";
+    popup.appendChild(countryImg);
 
     // Add our experience or reason to the popup
     allData.forEach((person) => {
@@ -114,8 +124,8 @@ const openSideMenuWithData = (data) => {
             const label = document.createElement('span');
             h3.textContent = person.firstName;
             label.textContent = 'visited';
-            h3.appendChild(label);
             section.appendChild(h3);
+            section.appendChild(label)
 
             // Add rating stars to section
             section.appendChild(ratingToStars(visitedCountry.rating));
@@ -145,8 +155,8 @@ const openSideMenuWithData = (data) => {
             const label = document.createElement('span');
             h3.textContent = person.firstName;
             label.textContent = 'Bucketlist';
-            h3.appendChild(label);
             section.appendChild(h3);
+            section.appendChild(label)
 
             // Add reason to section
             const reason = document.createElement('p');
