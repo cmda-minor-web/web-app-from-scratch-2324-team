@@ -1,0 +1,13 @@
+button {
+    height: 50px;
+    width: 50px;
+    background-color: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#icon {
+    max-width: 250px;
+    height: auto;
+}
