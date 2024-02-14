@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the JSON data using fetch API
-    fetch('https://jurienwaijenberg.github.io/web-app-from-scratch-2324/info.json')
+    Promise.all([
+        fetch('https://jurienwaijenberg.github.io/web-app-from-scratch-2324/info.json').then(resp => resp.json()),
+        fetch('https://raw.githubusercontent.com/LisaxLF/web-app-from-scratch-2324/main/info.json').then(resp => resp.json()),
+      ]).then(console.log)
+
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -67,3 +71,4 @@ function displayData(data) {
         // Append the created element to the data-container element
         document.getElementById('repeater').appendChild(listItem);
     });
+}
