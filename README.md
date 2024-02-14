@@ -6,7 +6,7 @@
 
 ## Inleiding
 
-Voor de teamopdracht WAFS moeten wij als team een web app, gerealiseerd met vanilla HTML, CSS en Javascript maken. De web app moet content bevatten via een data-connectie met de persoonlijke web app, één uitgewerkte micro-interactie bevatten, toegankelijk zijn en volledig responsive zijn.
+Voor de teamopdracht WAFS moeten wij als team een team web app, gerealiseerd met vanilla HTML, CSS en Javascript maken. De web app moet content bevatten via een data-connectie met de persoonlijke web app, Eén uitgewerkte micro-interactie bevatten, toegankelijk zijn en volledige responsive zijn. 
 
 **Teamleden:**
 - Quinten Kok (Senior)
@@ -18,23 +18,23 @@ Voor de teamopdracht WAFS moeten wij als team een web app, gerealiseerd met vani
 
 ### Doelen en Doelstellingen
 
-Voor dit project wilden wij een eendenvijver maken waarin ieder groepslid een klikbare persoonlijke eend heeft. Wanneer er op een eend geklikt wordt, wordt er data getoond op de webpagina, afkomstig van ieders persoonlijke pagina.
+Voor dit project wilden wij een eendenvijver maken waarin ieder groepslid een klikbare persoonlijke eend heeft. Wanneer er op een eend geklikt wordt zal er data worden getoond op de web page. De data wordt van ieder groepslid zijn persoonlijke pagina gehaald.
 
 ### Tijdsplanning
 
-We streefden ernaar dat iedereen zijn persoonlijke web app op vrijdag 9 februari af had, waarna we van maandag 12 tot en met woensdag 14 februari onze focus konden verleggen naar de teamopdracht. Dit was het streven, maar uiteindelijk is dit niet gelukt waardoor sommige teamleden nog kleine aanpassingen aan hun persoonlijke site moesten maken.
+Wij streefden ernaar dat iedereen zijn persoonlijke web app op vrijdag negen februari af had waardoor wij vanaf maandag twaalf tot en met woensdag veertien februari onze focus konden verleggen op de teamopdracht. Dit was het streven maar uiteindelijk is dit niet gelukt waardoor sommige teamleden nog kleine aanpassingen aan hun persoonlijke site moesten maken.
 
 ## Voorbereidingsfase
 
 ### Onderzoek en Analyse
 
-Na ontvangst van eenden van het HVA, besloten we als team om onze webpagina over eenden te laten gaan. Quinten schetste het idee van een eenden cijfer (zie Doelen en Doelstellingen).
+Nadat wij tijdens de introductie eenden ontvingen van het HVA, leek het ons als team leuk om onze web page over eenden te laten gaan. Quinten begon te schetsen in zijn boekje en kwam op het idee om een eenden cijfer te creëren ( zie Doelen en Doelstellingen )
 
 ![SchetsQuinten](https://github.com/KaoriYes/wafsEend/assets/118190801/e90f9fcf-137f-4fd1-96d0-0602f0d18c90)
 
 ### Ontwerp
 
-Kevin maakte in Adobe XD wireframes/ontwerpen van de website, zodat we gezamenlijk konden afstemmen hoe de site eruit moest zien, zonder direct de code in te duiken.
+Kevin heeft in Adobe XD een wireframes/ ontwerp gemaakt van de website. Hierdoor konden we gezamenlijk afstellen hoe de site eruit moest zien, zonder gelijk in de code te duiken.
 
 ![MicrosoftTeams-image (9)](https://github.com/KaoriYes/wafsEend/assets/118190801/c0a83b5e-6386-48b1-9a59-725200b6e8b4)
 ![MicrosoftTeams-image (10)](https://github.com/KaoriYes/wafsEend/assets/118190801/4b936f0b-738e-42ab-9f78-39d10257c104)
@@ -51,13 +51,13 @@ Kevin maakte in Adobe XD wireframes/ontwerpen van de website, zodat we gezamenli
 
 ### Codering
 
-Kevin begon met het maken van een template waarin we allemaal konden werken. Ieder lid had een eigen branch om merging conflicts te voorkomen. Stijlen mochten alleen in de eigen classname.
+Kevin is begonnen met maken van een template waarin wij als groepje allemaal in kunnen werken. Uiteindelijk hebben wij allemaal onze eigen branch gemaakt. Om merching conflicts te voorkomen hadden wij als regel afgesproken dat we alleen mochten stijlen in onze eigen classname.
 
 ![Code template](https://github.com/KaoriYes/wafsEend/assets/118190801/0a362161-9a48-42c3-ab36-6ce930f03f81)
 
 ![MicrosoftTeams-image (11)](https://github.com/KaoriYes/wafsEend/assets/118190801/5c99b8ad-4c10-4f8c-88e1-204851ee5b6e)
 
-Nadat ieder groepslid de animatie van zijn eendje voltooide, begon Quinten met het linken van data vanuit persoonlijke websites naar de team web app.
+Nadat ieder groepslid de animatie van zijn eigen eendje had voltooid begon Quinten de data vanuit onze persoonlijke websites te linken aan onze team web app. Wij hebben Quinten dit laten doen omdat hij de senior binnen het team is en hier het meeste verstand van heeft.
 
 ![Afbeelding Code Quinten](link_naar_afbeelding_code_quinten)
 
@@ -65,11 +65,13 @@ Nadat ieder groepslid de animatie van zijn eendje voltooide, begon Quinten met h
 
 ### Resultaten
 
-Het resultaat is een volledig responsive web app waarbij data van iemands persoonlijke web app zichtbaar wordt wanneer je op een groepslid zijn persoonlijke eendje klikt.
+Het resultaat van dit alles is een web app die volledig responsive is waarbij de data van iemands persoonlijke web app zichtbaar wordt wanneer je op een groepslid zijn persoonlijke eendje klikt.
 
 ### Leermomenten
 
-Het genereren van ons concept verliep vlot, en er was een positieve en communicatieve omgeving binnen het team. We konden nog verbeteren op het gebied van animaties en het gedetailleerder maken van de vijver.
+Tijdens dit teamproject ging het generen van ons concept erg vlot, al vrij vroeg zaten we op één lijn en bedachten we gezamenlijk nieuwe features waarbij er positief werd gereageerd op iedereen zijn ideeën. Door de positieve omgeving die wij als groepje creëerden werd duidelijk en goed gecommuniceerd waardoor deadlines of eventuele problemen af werden gemaakt en goed werden besproken. 
+
+Wat wij nog konden verbeteren waren de animaties, zo hadden wij bijvoorbeeld het eendje over het pad van de SVG kunnen laten lopen. Hier zijn wij helaas niet aan toegekomen. Ook hadden wij de vijver gedetailleerder kunnen maken door bijvoorbeeld een echte vijver of 3d toe te voegen.
 
 ## Bronnen
 
