@@ -30,15 +30,14 @@ Wij streefden ernaar dat iedereen zijn persoonlijke web app op vrijdag negen feb
 
 Nadat wij tijdens de introductie eenden ontvingen van het HVA, leek het ons als team leuk om onze web page over eenden te laten gaan. Quinten begon te schetsen in zijn boekje en kwam op het idee om een eenden cijfer te creëren ( zie Doelen en Doelstellingen )
 
-![SchetsQuinten](https://github.com/KaoriYes/wafsEend/assets/118190801/e90f9fcf-137f-4fd1-96d0-0602f0d18c90)
+<img src="https://github.com/KaoriYes/wafsEend/assets/118190801/e90f9fcf-137f-4fd1-96d0-0602f0d18c90" alt="Image Alt Text" width="300">
 
 ### Ontwerp
 
 Kevin heeft in Adobe XD een wireframes/ ontwerp gemaakt van de website. Hierdoor konden we gezamenlijk afstellen hoe de site eruit moest zien, zonder gelijk in de code te duiken.
 
-![MicrosoftTeams-image (9)](https://github.com/KaoriYes/wafsEend/assets/118190801/c0a83b5e-6386-48b1-9a59-725200b6e8b4)
-![MicrosoftTeams-image (10)](https://github.com/KaoriYes/wafsEend/assets/118190801/4b936f0b-738e-42ab-9f78-39d10257c104)
-
+<img src="https://github.com/KaoriYes/wafsEend/assets/118190801/c0a83b5e-6386-48b1-9a59-725200b6e8b4" alt="Image Alt Text" width="300">
+<img src="https://github.com/KaoriYes/wafsEend/assets/118190801/4b936f0b-738e-42ab-9f78-39d10257c104" alt="Image Alt Text" width="300">
 
 ## Uitvoeringsfase
 
@@ -53,9 +52,8 @@ Kevin heeft in Adobe XD een wireframes/ ontwerp gemaakt van de website. Hierdoor
 
 Kevin is begonnen met maken van een template waarin wij als groepje allemaal in kunnen werken. Uiteindelijk hebben wij allemaal onze eigen branch gemaakt. Om merching conflicts te voorkomen hadden wij als regel afgesproken dat we alleen mochten stijlen in onze eigen classname.
 
-![Code template](https://github.com/KaoriYes/wafsEend/assets/118190801/0a362161-9a48-42c3-ab36-6ce930f03f81)
-
-![MicrosoftTeams-image (11)](https://github.com/KaoriYes/wafsEend/assets/118190801/5c99b8ad-4c10-4f8c-88e1-204851ee5b6e)
+<img src="https://github.com/KaoriYes/wafsEend/assets/118190801/0a362161-9a48-42c3-ab36-6ce930f03f81" alt="Image Alt Text" width="300">
+<img src="https://github.com/KaoriYes/wafsEend/assets/118190801/5c99b8ad-4c10-4f8c-88e1-204851ee5b6e" alt="Image Alt Text" width="300">
 
 Nadat ieder groepslid de animatie van zijn eigen eendje had voltooid begon Quinten de data vanuit onze persoonlijke websites te linken aan onze team web app. Wij hebben Quinten dit laten doen omdat hij de senior binnen het team is en hier het meeste verstand van heeft.
 
