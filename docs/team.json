@@ -1,38 +1,20 @@
 {
-    "teamName": "{naam van je team}",
+    "teamName": "JJEL",
     "members": [
-        {
-            "name" : "{teamlid 1}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-1"
-        },
-        {
-            "name" : "{teamlid 2}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-2"
-        },
-        {
-            "name" : "{teamlid 3}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-3"
-        },
-        {
-            "name" : "{teamlid 4}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-4"
-        },
-        {
-            "name" : "{teamlid 5}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-5"
-        },
-    ],
-
-
-
-
-    
-    "pages" : [{
-        "home" : "Welkom",
-        "detail" : "Detail van"
-    }],
-    "otherstuff" : [{
-        "feel" : "free",
-        "to" : "expereriment"
+    {
+        "name": "Eefje",
+        "personalPage": "https://eefjesnel.github.io/web-app-from-scratch-eefje/"
+    },
+    {
+        "name": "Jop",
+        "personalPage": "https://jopmolenaar.github.io/web-app-from-scratch-2324/"
+    },
+    {
+        "name": "Joppe",
+        "personalPage": "https://wafs-dot-erudite-imprint-214919.ew.r.appspot.com/"
+    },
+    {
+        "name": "Lynn",
+        "personalPage": "https://lynnwolters.github.io/WAFS-individuele-website/"
     }]
 }

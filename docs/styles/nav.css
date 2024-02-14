@@ -1,0 +1,89 @@
+nav {
+    width: calc(100vw - 4em);
+    height: fit-content;
+
+    position: fixed;
+    z-index: 1000;
+
+    margin: 2em 2em 0 2em;
+    pointer-events: none;
+}
+
+nav>ul {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li {
+    list-style: none;
+    pointer-events: auto;
+}
+
+nav>ul>li:nth-of-type(1) {
+    width: fit-content;
+    height: 3.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1.5em;
+
+    background-color: var(--black-color);
+
+    border-radius: 1em;
+
+    cursor: pointer;
+}
+
+nav>ul>li:nth-of-type(1):hover {
+    background-color: var(--dark-gray-color);
+
+    transition: all .2s ease-in-out;
+}
+
+nav>ul>li:nth-of-type(1) a {
+    font-size: .75em;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+nav>ul>li:nth-of-type(2) {
+    width: fit-content;
+    height: fit-content;
+
+    padding: .4em;
+
+    background-color: var(--gray-color);
+
+    border-radius: 1em;
+}
+
+nav>ul>li:nth-of-type(2)>button {
+    height: 3.5em;
+
+    margin-right: .2em;
+    padding: 0 1.5em;
+
+    background-color: var(--white-color);
+
+    border: none;
+    border-radius: 1em;
+
+    font-size: .75em;
+    color: var(--black-color);
+
+    cursor: pointer;
+}
+
+nav>ul>li:nth-of-type(2)>button:last-of-type {
+    margin-right: 0;
+}
+
+.select-person.toggle-select-person {
+    background-color: var(--black-color);
+
+    color: var(--white-color);
+}
